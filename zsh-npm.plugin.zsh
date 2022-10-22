@@ -48,10 +48,10 @@ alias nu="npm update"
 alias nug="npm update -g"
 
 # List
-alias nls="npm list"
-alias nls0="npm list --depth=0"
-alias nlsg="npm list -g"
-alias nlsg0="npm list -g --depth=0"
+alias nls="npm ls"
+alias nls0="npm ls --depth=0"
+alias nlsg="npm ls -g"
+alias nlsg0="npm ls -g --depth=0"
 
 # Audit
 alias na="npm audit"
@@ -123,7 +123,7 @@ alias nrm_lck="rm -rf ./package-lock.json ./npm-shrinkwrap.json"
 # Reinstall packages
 alias nri_nm="nrm_nm && ni"
 
-# Reinstall packages and recreatre package-lock
+# Reinstall packages and recreate package-lock
 alias nri_all="nrm_nm && nrm_lck && ni"
 
 # Add the local node_modules/.bin folder to your $PATH, which will allow the installed utils to run

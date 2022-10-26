@@ -13,6 +13,9 @@
   compdef _npm_completion npm
 }
 
+# Update zsh-npm plugin
+alias zsh-npm-update="git --git-dir ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-npm/.git pull origin main"
+
 # Basic
 alias n="npm"
 alias nv="npm -v"
@@ -130,4 +133,4 @@ alias nri_all="nrm_nm && nrm_lck && ni"
 # e.g., npm i -D cowsay && ne cowsay "Hello world"
 # or you can just execule ne alias once and call all utils without it at the beginning
 # e.g., npm i -D cowsay && ne && cowsay "Hello world"
-alias ne="PATH=$(npm bin):$PATH"
+alias ne='PATH="$(npm bin)":"$PATH"'

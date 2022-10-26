@@ -11,6 +11,10 @@ It's based on [the official npm plugin for Oh-My-Zsh](https://github.com/ohmyzsh
 1. Run this command in terminal: `git clone https://github.com/vladhaidukkk/zsh-npm.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-npm`
 2. Add **zsh-npm** to your plugins list - edit `.zshrc` and change `plugins=(...)` to `plugins=(... zsh-npm)`
 
+## Update
+
+To update **zsh-npm** plugin you can run this command in terminal: `zsh-npm-update`
+
 ## Aliases
 
 | Alias     | Command                                            | Description                                                                                       |
@@ -80,4 +84,4 @@ It's based on [the official npm plugin for Oh-My-Zsh](https://github.com/ohmyzsh
 | `nrm_lck` | `rm -rf ./package-lock.json ./npm-shrinkwrap.json` | Delete lock files                                                                                 |
 | `nri_nm`  | `nrm_nm && ni`                                     | Reinstall packages                                                                                |
 | `nri_all` | `nrm_nm && nrm_lck && ni`                          | Reinstall packages and recreate package-lock                                                      |
-| `ne`      | `PATH=$(npm bin):$PATH`                            | Add the local node_modules/.bin folder to your $PATH, which will allow the installed utils to run |
+| `ne`      | `PATH="$(npm bin)":"$PATH"`                        | Add the local node_modules/.bin folder to your $PATH, which will allow the installed utils to run |

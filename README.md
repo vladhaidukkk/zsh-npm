@@ -24,7 +24,8 @@ To update **zsh-npm** plugin you can run this command in terminal: `zsh-npm-upda
 | `nnew`    | `npm init`                                         | Interactively creates or updates a package.json file                                              |
 | `nnewy`   | `npm init -y`                                      | Create a package.json file with default options                                                   |
 | `ni`      | `npm i`                                            | Install a package in dependencies (`package.json`)                                                |
-| `nig`     | `npm i -g`                                         | Install packages globally on your operating system                                                |
+| `nie`     | `npm i -E`                                         | Install a package in dependencies (`package.json`) with exact version                             |
+| `nig`     | `npm i -g`                                         | Install a package globally on your operating system                                               |
 | `nid`     | `npm i -D`                                         | Install a package in devDependencies (`package.json`)                                             |
 | `nide`    | `npm i -D -E`                                      | Install a package in devDependencies (`package.json`) with exact version                          |
 | `nio`     | `npm i -O`                                         | Install a package in optionalDependencies (`package.json`)                                        |

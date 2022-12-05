@@ -26,6 +26,7 @@ alias nnewy="npm init -y"
 
 # Install
 alias ni="npm i"
+alias nie="npm i -E"
 alias nig="npm i -g"
 alias nid="npm i -D"
 alias nide="npm i -D -E"
